@@ -1,3 +1,7 @@
+//APPROACH
+Just apply BFS for tree and apply condition, if (i==0) then only push it to the final answer. 
+Similarly you can do for Right View - condition will be changed to (i==s-1)
+
 vector<int> LeftView(Node* root){
   vector<int> ans;
   if(root == NULL) return ans;
