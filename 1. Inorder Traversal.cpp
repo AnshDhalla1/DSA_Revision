@@ -19,3 +19,20 @@ public:
 
 
 //ITERATIVE
+void inorder(TreeNode* root){
+     if(root == NULL) return;
+
+     stack<TreeNode*> st;
+     TreeNode* curr = root;;
+
+     while(curr != NULL  || !st.empty()){
+          while(curr != NULL){
+               st.push(curr);
+               curr = curr->left;
+          }
+          curr = st.top();
+          s.pop();
+          ans.push_back(curr->val);
+          curr = curr->right;
+     }
+}
