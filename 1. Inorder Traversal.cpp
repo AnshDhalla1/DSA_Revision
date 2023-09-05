@@ -20,6 +20,7 @@ public:
 
 //ITERATIVE
 void inorder(TreeNode* root){
+     vector<int> ans;
      if(root == NULL) return;
 
      stack<TreeNode*> st;
