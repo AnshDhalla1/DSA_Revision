@@ -1,3 +1,6 @@
+// TC = O(V + 2E) - Undirected graph    AS = O(V)
+// TC = O(V + E) - Directed graph
+
 vector<int> BFS(int v, vector<int> adj){
   vector<int> vis(0);
   vector<int> trav;
